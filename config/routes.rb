@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'destroy', to: 'users#destroy', as: :destroy_users
   get 'modify', to: 'users#modify', as: :modify_users
   get 'edit', to: 'users#edit', as: :edit_users
+  root :to => "users#index"
 end
