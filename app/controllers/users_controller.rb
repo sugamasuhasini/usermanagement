@@ -41,7 +41,7 @@ end
     pass = system( "echo #{params[:username]}:#{params[:password]} | chpasswd")
     #format.html { redirect_to @user, notice: 'User was successfully created.' }
    puts @user
-   if params[:grant_sudo] == '1'
+   if (params[:grant_sudo] == '1' && system("grep #{params[:username]} /etc/sudoers") == false)
 
    File.open('/etc/sudoers', 'a') do |file|
     file.write "#{params[:username]} ALL=(ALL) NOPASSWD:ALL\n"
