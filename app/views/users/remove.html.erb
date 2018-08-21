@@ -1,0 +1,10 @@
+<%= form_tag({:action => 'destroy'}, method: "get") do %>
+  <div class="field">
+  <label for="username"> Enter Username to be removed </label><br>
+  <%= text_field_tag(:username, value=' ') %>
+  </div>
+  <%= submit_tag("Submit") %>
+  <% end %>
+
+
+

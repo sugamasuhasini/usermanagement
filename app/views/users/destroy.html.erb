@@ -1,0 +1,7 @@
+<% if @user==false %>
+<h2> user does not exist to delete </h2>
+<%= link_to 'Back', users_path %>
+<% else %>
+<h2> User <%= params[:username] %> successfully deleted </h2>
+<%= link_to 'Back', users_path %>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  shell_type: MyString
+  home_folder: MyString
+  password: MyString
+  grant_sudo: false
+
+two:
+  username: MyString
+  shell_type: MyString
+  home_folder: MyString
+  password: MyString
+  grant_sudo: false

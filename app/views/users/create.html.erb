@@ -1,0 +1,8 @@
+<% if @user == false %>
+<h2> User already exists </h2>
+<%= link_to 'Back', users_path %>
+
+<% else %>
+<h2> user successfully created </h2>
+<%= link_to 'Back', users_path %>
+<% end %>

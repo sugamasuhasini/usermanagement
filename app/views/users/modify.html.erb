@@ -1,0 +1,39 @@
+<%= form_tag({:action => 'edit'}, method: "get") do %>
+  <!-- <div class="field">
+    <%#= form.label :username %>
+    <%#= form.text_field :username %>
+  </div> -->
+  <div class="field">
+  <label for="username"> Username: </label><br>
+  <%= text_field_tag(:username, value=' ') %>
+  </div>
+
+  <div class="field">
+    <label for="shell_type"> Shell Type: </label><br>
+  <%= text_field_tag(:shell_type, value=' ') %>
+  </div>
+
+  <div class="field">
+  <label for="home_folder"> Home Folder: </label><br>
+  <%= text_field_tag(:home_folder, value=' ') %>
+  </div>
+
+  <div class="field">
+    <label for="password"> Password: </label><br>
+  <%= text_field_tag(:password, value=' ') %>
+  </div>
+
+  <!-- <div class="field">
+    <%#= form.label :grant_sudo %>
+    <%#= form.check_box :grant_sudo %>
+  </div> -->
+
+  <div class="field">
+   <label for="grant_sudo"> Grant sudo: </label><br> 
+  <%= check_box_tag(:grant_sudo) %>
+</div>
+
+  <div class="actions">
+    <%= submit_tag("Submit") %>
+  </div>
+<% end %>
